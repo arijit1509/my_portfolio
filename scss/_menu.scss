@@ -99,10 +99,11 @@
   }
 
   .nav-item {
-    transform: translate3d(30px, 0, 0);
+    transform: translate3d(24px, 0, 0);
     @include easeOut;
 
     &.show {
+      //Slid in from right
       transform: translate3d(0, 0, 0);
     }
 
@@ -131,6 +132,6 @@
 //Delay Each Nav Item Slide By 0.1s
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
-    transition-delay: $x * 0.05s;
+    transition-delay: $x * 0.22s;
   }
 }
